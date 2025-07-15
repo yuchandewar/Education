@@ -1,44 +1,23 @@
-<!doctype html>
-<html>
-<head>
-<title>title web page</title>
-</head>
-<body>
-<h1>This is an H1 Heading</h1>
-<h2 align="center" style="color:green";> This is an H2 Heading</h2>
-<h3 align="right" style="color:yellow">This is an H3 Heading</h3>
-<h4 style="color:pink">This is an H4 Heading</h4>
-<h5 align="center" style="color:white">This is an H5 Heading</h5>
-<h6 align="right" style="color:orange">This is an H6 Heading</h6>
-<h6>This is an H6 Heading</h6>
-<h5 align="center" style="color:green";>This is an H5 Heading</h5>
-<h4 align="right" style="color:yellow">This is an H4 Heading</h4>
-<h3 style="color:pink">This is an H3 Heading</h3>
-<h2 align="right" style="color:orange">This is an H2 Heading</h2>
-<h1>This is an H1 Heading</h1>
-<table>
-<tr>
-<th>company</th>
-<th>model</th>
-<th>price</th>
-</tr>
-<td>bmw</td>
-<td>m5</td>
-<td>2 cr</td>
-</tr>
-<tr>
-<td>mercedes</td>
-<td>G wagon</td>
-<td>1.5 cr</td>
-</tr>
-<tr>
-<td>suzuki</td>
-<td>alto</td>
-<td>4 lakh</td>
-</tr>
-</table>
-<img src="/home/computer/Desktop/42 bmw.jpeg">
-<img src="/home/computer/Desktop/42 g wagon.jpeg">
-<img src="/home/computer/Desktop/alto.jpeg">
-</body>
-</html>
+-- Online SQL Editor to Run SQL Online.
+-- Use the editor to create new tables, insert data and all other SQL operations.
+  
+--SELECT first_name, age
+--FROM Customers;
+
+--INSERT INTO Customers (customer_id,first_name,last_name,age,country)
+--VALUES(6,"Yashpal","Chandewar",20,"IND");
+
+--UPDATE Customers SET country="IND" WHERE age=22;
+
+--DELETE FROM Orders WHERE order_id=5
+
+--SELECT Customers.customer_id,Orders.order_id,Customers.first_name
+--FROM Customers LEFT JOIN Orders
+--ON Customers.customer_id = Orders.order_id 
+
+
+SELECT Customers.customer_id,Orders.order_id,Customers.first_name,Customers.last_name
+FROM Customers INNER JOIN Orders
+ON Customers.customer_id = Orders.order_id
+WHERE 300 < Orders.amount 
+
