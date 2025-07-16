@@ -54,6 +54,8 @@ if __name__ == "__main__":
     
     chat()
 
+    we can edit code 
+
     
 # Run the script
 # lms   # Check if the server is running
